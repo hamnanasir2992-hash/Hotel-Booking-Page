@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Confirmation</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@1,9..144,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <aside>
+        <section>
+            <header id="sidebar-header">
+                <img src="images/illustration-sun.svg" alt="sun" height="40px">
+                <div id="wordmark">
+                    <h3 id="Maison">Maison</h3>
+                    <h3 id="Soleil">Soleil</h3>
+                </div>
+            </header>
+            <nav>
+               <ul>
+                    <li><img src="images/icon-bed.svg" alt="bed">Your Stay</li>
+                    <li><img src="images/icon-house.svg" alt="house">The House</li>
+                    <li><img src="images/icon-pin.svg" alt="location">Around Town</li>
+                    <li><img src="images/icon-breakfast-outline.svg" alt="breakfast">Breakfast</li>
+                    <li><img src="images/icon-mail.svg" alt="mail">Messages</li>
+                </ul>
+            </nav>
+        </section>
+        <footer>
+            <section id="weatherCard">
+                    <p id="item1">TODAY IN CASSIS</p>
+                    <h1 id="item2">27&deg;</h1>
+                    <p id="item3">Sunny &middot; light breeze</p>
+                <img id="circle" src="images/icon-weather.svg" alt="weather icon">
+            </section>
+            <section id="company">
+                <p>EST. 1987</p>
+                <p>MAISON SOLEIL &middot; RUE DES</p>
+                <p>OLIVIERS &middot; CASSIS</p>
+                <p>&copy; 2026 MAISON SOLEIL</p>
+            </section>
+        </footer>
+     </aside>
+     <main>
+        <p class="bookingConfirmed">BOOKING &middot; CONFIRMED</p>
+        <header id="main-header">
+            <section id="venue">
+                <pre id="bienvenue">Bienvenue,</pre>
+                <pre id="lucia"> Lucia.</pre>
+            </section>
+            <section id="main-button">
+                <p id="print">Print receipt</p>
+                <p id="calendar">Add to calendar</p>
+            </section>
+        </header>
+        <section id="overlapping-cards">
+
+            <section id="receipt-card">
+                <section class="s1">
+                    <div id="first">
+                        <p>RECEIPT</p>
+                        <p id="p2">Your stay</p>
+                    </div>
+                    <div id="second">
+                        <p>No MS-2026</p>
+                        <p>0421-AH</p>
+                    </div>
+                </section>
+
+                <section class="s1" id="s2">
+                    <div class="time">
+                        <p>CHECK IN</p>
+                        <p class="date">25 Apr</p>
+                        <p class="day">Saturday &middot; 15:00</p>
+                    </div>
+                    <div class="time">
+                        <p>CHECK OUT</p>
+                        <p class="date">29 Apr</p>
+                        <p class="day">Wednesday &middot; 11:00</p>
+                    </div>
+                </section>
+
+                <section id="s3">
+                    <div class="s3Elements">
+                        <p>Room&middot;La Garrigue &times; 4 nights</p>
+                        <p style="font-family: 'DM mono', monospace">&euro; 620.00</p>
+                    </div>
+                    <div class="s3Elements">
+                        <p>Breakfast &times; 2 guests</p>
+                        <p style="font-family: 'DM mono', monospace">&euro; 96.00</p>
+                    </div>
+                    <div class="s3Elements" style="color: rgb(87, 86, 86)">
+                        <p>Tourist tax</p>
+                        <p style="font-family: 'DM mono', monospace">&euro; 14.40</p>
+                    </div>
+                </section>
+
+                <section id="s4">
+                    <div id="s4-d1">
+                        <p>TOTAL PAID</p>
+                        <P>PAID &middot; WISE &middot; GBP</P>
+                    </div>
+                    <div id="s4-d2">
+                        <p id="bill">&euro; 730.40</p>
+                        <img src="images/icon-barcode.svg" alt="barcode" width="60px">
+                    </div>
+                </section>
+            </section>
+
+            <section id="welcome-card">
+                <section id="w1">
+                    <p>WELCOME CARD</p>
+                    <img src="images/icon-sun.svg" alt="sun" id="sun" height="30px">
+                </section>
+
+                <section id="w2">
+                    <p id="note">A note from your host,</p>
+                    <p id="margaux">Margaux.</p>
+                    <p id="actualNote">We're so glad you're coming. The shutters will be open,<br>the lemonade cold, and the cat - Poivre - pretending<br>not to notice you.</p>
+                </section>
+
+                <section>
+                    <p id="w3-1">ROOM</p>
+                    <p id="w3-2">La Garrigue</p>
+                </section>
+            </section>
+        </section>
+
+        <section id="main-mid">
+            <img src="images/icon-sparkle.svg" alt="sparkle" height="7px">
+            <pre id="hover"> HOVER TO FAN </pre>
+            <img src="images/icon-sparkle.svg" alt="sparkle" height="7px">
+        </section>
+
+        <section id="informational-cards">
+            <section class="icard">
+                <div class="top" style="color: hsl(17, 90%, 45%)">
+                    <div class="top-left">
+                        <img src="images/icon-key.svg" alt="key" id="icon1">
+                        <p class="top-text">ARRIVAL</p>
+                    </div>
+                    <p class="num">01</p>
+                </div>
+                    <p class="date">Check-in from 15:00</p>
+                    <p class="day">Sat, 25 April</p>
+                    <p class="text">Ring the brass bell by the blue door. If we're at<br>the market, the key is in the terracotta pot by<br>the olive tree.</p>
+            </section>
+
+            <section class="icard">
+                <div class="top" style="color: hsl(224, 40%, 46%)">
+                    <div class="top-left">
+                        <img src="images/icon-wifi.svg" alt="wifi" id="icon2">
+                        <p class="top-text">WIFI</p>
+                    </div>
+                    <p class="num">02</p>
+                </div>
+                    <p class="date">Le Soleil &middot; Guest</p>
+                    <p class="day">Password below</p>
+                <section>
+                    <div class="wifi">
+                        <p class="bookingConfirmed">NETWORK</p>
+                        <p class="allInfo">Le Soleil &middot; Guest</p>
+                    </div>
+                    <div class="wifi">
+                        <p class="bookingConfirmed">PASSWORD</p>
+                        <div id="info" class="allInfo">
+                            <p>soleil-2026</p>
+                            <p id="copy">COPY</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section class="icard">
+                <div class="top" style="color: hsl(335, 79%, 55%)">
+                    <div class="top-left">
+                        <img src="images/icon-breakfast.svg" alt="breakfast" id="icon3">
+                        <p class="top-text">BREAKFAST</p>
+                    </div>
+                    <p class="num">03</p>
+                </div>
+                    <p class="date">Served 8 - 10:30</p>
+                    <p class="day">On the terrace</p>
+                    <p class="text">Fresh figs, Marseille honey, pain au levain, and<br>espresso. Gluten-free option? Leave a note the<br>night before.</p>
+            </section>
+        </section>
+     </main>
+</body>
+</html>

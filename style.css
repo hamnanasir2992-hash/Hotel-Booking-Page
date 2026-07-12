@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(41, 88%, 94%);
+    display: flex;
+    flex-direction: row;
+    font-family: "Barlow", sans-serif;
+    margin: 16px;
+    min-height: calc(100vh - 32px);
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    padding-right: 16px;
+    width: 200px;
+    justify-content: space-between;
+    border-right: 1px solid rgb(216, 215, 215);
+}
+#wordmark{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6px;
+}
+h3{
+    font-family: "Fraunces", serif;
+    font-weight: 540;
+}
+#Maison{
+    font-style: italic;
+    color: hsl(15, 68%, 45%);
+    font-weight: 460;
+}
+#sidebar-header{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgb(216, 215, 215);
+}
+ul{
+    font-size: small;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: rgb(82, 81, 81);
+}
+footer{
+    font-size: 9px;
+}
+#weatherCard{
+    background-color: hsl(49, 95%, 61%);
+    padding: 15px;
+    border-radius: 18px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 2px 6px 1px hsl(49, 79%, 77%);
+}
+#company{
+    font-family: 'DM mono', monospace;
+    padding: 10px;
+    border-top: 1px dashed rgb(216, 215, 215);
+    color: rgb(82, 81, 81);
+}
+#item1{
+    font-family: 'DB mono', monospace;
+    color: rgb(56, 56, 56);
+    margin-bottom: 7px;
+}
+#item2{
+    font-family: 'Fraunces', serif;
+    margin-bottom: 7px;
+    font-size: 26px;
+    font-weight: 400;
+}
+#item3{
+    font-family: 'Barlow', sans-serif; 
+    color: rgb(56, 56, 56);
+}
+#circle{
+    width: 75px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 200px);
+    padding: 16px;
+}
+#main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bookingConfirmed{
+    font-family: 'DM mono', monospace;
+    font-size: 10px;
+    color: rgb(82, 81, 81);
+}
+#venue{
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+}
+#bienvenue{
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+}
+#lucia{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: hsl(15, 68%, 45%);
+}
+#main-button{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#print{
+    border: 0.5px solid rgb(216, 215, 215);
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 9px;
+    padding-top: 7px;
+    height: 10px
+}
+#calendar{
+    background-color: black;
+    color: hsl(41, 88%, 94%);
+    border: 0.5px solid black;
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 9px;
+    padding-top: 7px;
+    height: 10px;
+}
+#overlapping-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+#receipt-card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    transform: rotate(-5deg);
+    box-shadow: 2px 3px 10px rgb(201, 200, 200);
+}
+.s1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'DM mono', monospace;
+    font-size: 5px;
+    color: rgb(82, 81, 81);
+    padding: 10px;
+    border-bottom: 1px dotted rgb(236, 236, 236);
+}
+#p2{
+    font-size: 10px;
+    font-family: 'Fraunces', serif;
+    color: black;
+    font-weight: 400;
+}
+#second{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#s2{
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 6px;
+    font-family: 'DM mono', monospace;
+}
+.date{
+    font-size: 20px;
+    color: black;
+    font-family: 'Fraunces', serif;
+}
+.day{
+    color: rgb(36, 35, 35);
+    font-family: 'Barlow', sans-serif;
+    font-size: 8px;
+}
+#s3{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(87, 86, 86, 0.5);
+}
+.s3Elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#s4{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#s4-d1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(82, 81, 81);
+    font-family: 'DM mono', monospace;
+    font-size: 10px;
+    height: 45px;
+}
+#bill{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+#s4-d2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#welcome-card{
+    background-color: hsl(15, 79%, 48%);
+    color: hsl(44, 84%, 75%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    position: relative;
+    transform: rotate(5deg);
+    box-shadow: 3px 3px 10px 3px hsl(15, 61%, 76%);
+}
+#w1{
+    font-size: 7px;
+    font-family: 'DM mono', monospace;
+    border-top: 1px dashed hsla(44, 84%, 75%, 0.5);
+    padding: 5px;
+    padding-top: 10px;
+}
+#sun{
+    position: absolute;
+    right: 15px;
+}
+#w2{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fraunces', sans-serif;
+    font-style: italic;
+}
+#note{
+    color: hsl(49, 95%, 61%);
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+#margaux{
+    font-size: 25px;
+    color: hsl(45, 71%, 81%);
+    padding-bottom: 7px;
+}
+#actualNote{
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-size: 10px;
+}
+#w3-1{
+    font-family: 'DM mono', monospace;
+    font-size: 6px;
+}
+#w3-2{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 12px;
+}
+#main-mid{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+#hover{
+    font-family: 'DM mono', monospace;
+    font-size: 7px;
+    color: rgb(105, 105, 105);
+}
+#informational-cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+.icard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    padding: 15px;
+    padding-bottom: 25px;
+    border: 1px solid rgb(212, 212, 212);
+    box-shadow: 0px 1px 5px rgb(194, 194, 194);
+}
+#icon1{
+    background-color: hsl(17, 90%, 45%);
+    padding: 3px;
+    border-radius: 5px;
+    height: 22px;
+}
+#icon2{
+    background-color: hsl(224, 40%, 46%);
+    padding: 3px;
+    border-radius: 5px;
+    height: 22px;
+}
+#icon3{
+    background-color: hsl(335, 79%, 55%);
+    padding: 3px;
+    border-radius: 5px;
+    height: 22px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-left{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.top-text{
+    font-family: 'DM mono', monospace;
+    font-size: 10px;
+    font-weight: 500;
+}
+.num{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 600;
+}
+.text{
+    color: rgb(63, 63, 63);
+    font-family: 'Barlow', sans-serif;
+    font-size: 13px;
+}
+.wifi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(228, 227, 227);
+    border-radius: 5px;
+    margin-bottom: 4px;
+    padding: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+#info{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+#copy{
+    font-family: 'DM mono', monospace;
+    font-size: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 3px;
+    border-radius: 9px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+.allInfo{
+    font-family: 'Barlow', sans-serif;
+    font-size: 9px;
+}
